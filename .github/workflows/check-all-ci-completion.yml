@@ -1,8 +1,13 @@
 name: check-all-ci-result
+#on:
+#  pull_request:
+#    branches:
+#      - main
 on:
-  pull_request:
+  push:
     branches:
-      - main
+      - "**"
+      - "!main"
 jobs:
   check-another-ci:
     name: all-check
