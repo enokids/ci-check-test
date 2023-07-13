@@ -1,0 +1,19 @@
+name: ui
+on:
+  push:
+    paths:
+      - "ui/**"
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  ui:
+    name: ui
+    runs-on: ubuntu-latest
+    steps:
+      - name: exit1
+        run: |
+          echo "ui failed" &&
+          exit 1
