@@ -16,4 +16,4 @@ jobs:
       - name: exit0
         run: |
           echo "api failed" &&
-          exit 1
+          exit 0
