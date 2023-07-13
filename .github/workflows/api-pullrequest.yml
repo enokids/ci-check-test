@@ -1,4 +1,4 @@
-name: check-all-ci-result
+name: api pull request
 on:
   pull_request:
     paths:
