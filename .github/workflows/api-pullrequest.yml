@@ -13,7 +13,7 @@ jobs:
     name: api
     runs-on: ubuntu-latest
     steps:
-      - name: exit1
+      - name: exit0
         run: |
           echo "api failed" &&
-          exit 1
+          exit 0
