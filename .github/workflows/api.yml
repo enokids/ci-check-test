@@ -1,19 +1,19 @@
-#name: api
-#on:
-#  push:
-#    paths:
-#      - "api/**"
-#
-#concurrency:
-#  group: ${{ github.workflow }}-${{ github.ref }}
-#  cancel-in-progress: true
-#
-#jobs:
-#  api:
-#    name: api
-#    runs-on: ubuntu-latest
-#    steps:
-#      - name: exit1
-#        run: |
-#          echo "api failed" &&
-#          exit 1
+name: api
+on:
+  push:
+    paths:
+      - "api/**"
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  api:
+    name: api
+    runs-on: ubuntu-latest
+    steps:
+      - name: exit0
+        run: |
+          echo "api failed" &&
+          exit 0
