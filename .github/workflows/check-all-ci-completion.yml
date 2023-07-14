@@ -1,8 +1,5 @@
 name: check-all-ci-result
-#on:
-#  pull_request:
-#    branches:
-#      - main
+
 on:
   push:
     branches:
