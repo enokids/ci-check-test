@@ -1,4 +1,4 @@
-name:on_release_publish
+name: on_release_publish
 
 on:
   release:
